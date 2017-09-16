@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="iso-8859-1" />
+    <title>Tirando de Letra</title>
+    <script type="text/javascript" src="js/phaser.min.js"></script>
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 10px 175px 10px 175px;
+            background: slategray;
+        }
+
+    </style>
+</head>
+<body>
+
+<script type="text/javascript">
+
+    var game = new Phaser.Game(1000, 650, Phaser.AUTO, '', { preload: preload, create: create});
+    var botaoJogar;
+    var botaoDica;
+    var botaoSair;
+
+    function preload() {
+
+        this.game.load.image('jogar','assets/Botoes/botao_jogar.png');
+        this.game.load.image('dica','assets/Botoes/botao_dica.png');
+        this.game.load.image('sair','assets/Botoes/botao_sair.png');
+        this.game.load.image('fundoMenu', 'assets/fundos/fundo_ii.png');
+
+    }
+
+    // ====================================================================================================================
+    //************************************** Metodo create **********************************************************
+    function create() {
+
+        this.game.add.sprite(0, 0, 'fundoMenu').scale.setTo(1.5,1.6);
+        //
+        // this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
+        botaoJogar = this.game.add.button(400, 200,'jogar');
+        botaoJogar.scale.setTo(0.7,0.7);
+        botaoJogar.inputEnabled = true;
+        botaoJogar.input.useHandCursor = true;
+        botaoJogar.events.onInputDown.add(telaJogo,this);
+
+        botaoDica = this.game.add.button(400, 300,'dica');
+        botaoDica.scale.setTo(0.7,0.7);
+        botaoDica.inputEnabled = true;
+        botaoDica.input.useHandCursor = true;
+        botaoDica.events.onInputDown.add(telaDica,this);
+
+        botaoSair = this.game.add.button(400, 400,'sair');
+        botaoSair.scale.setTo(0.7,0.7);
+        botaoSair.inputEnabled = true;
+        botaoSair.input.useHandCursor = true;
+        botaoSair.events.onInputDown.add(telaSair,this);
+    }
+
+
+    //====================================================================================================================
+    //************************************** Metodo update **********************************************************
+
+
+
+    function telaJogo(){
+        window.location = "jogo.php";
+    }
+
+    function telaDica(){
+       window.location = "telaDica.html";
+
+    }
+
+    function telaSair(){
+        window.location = "telaFim.html";
+    }
+
+
+
+</script>
+
+</body>
+</html>

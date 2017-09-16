@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+ <link type="text/css" href="_css/estilo.css" rel="stylesheet" />
+<title>Upload de arquivos </title>	     
+
+</head>
+
+<body>
+	<div id="conteudo">
+		<form method="post" enctype="multipart/form-data" action="inserirBD.php">
+				<div class="inserir">				
+					<h1><I><legend>Inserir Elemento</legend></I></h1>					
+				</div>
+				<fieldset style="width:285px; height:100px; border:5px solid #d5d5d5; left:50px; top:50px;" >
+					<legend align="left"> <label>Nome:</label></legend>
+				<h2 align="left">
+					<input type="text" name="nome" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</fieldset>
+						
+				<fieldset style="width:150px; height:100px; border:5px solid #d5d5d5; left:300px; top:100px;" >
+					<legend align="left"><label>Imagem:</label>  </legend>
+				<h2 align="left">
+					<input type="file" name="imagem" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</fieldset>  
+									
+				<fieldset style="width:150px; height:100px; border:5px solid #d5d5d5; left:300px; top:100px;">
+					<legend align="left"><label>Áudio:</label></legend>
+				<h2 align="left">
+				<input type="file" name="audio" />
+				</fieldset>
+						
+				<fieldset  style="width:286px; height:100px; border:5px solid #d5d5d5; left:300px; top:100px;" >
+					<legend align="left"><label>Posição do Elemento:</label></legend>
+				<h2 align="left">
+					<input type="text" name="posicao" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</fieldset>
+			
+			
+				<h1 align="middle">
+				 <input type="submit"  value="Salvar" />
+				<h1>
+			</h2>
+		 </form>
+	 </div>
+	 
+	 
+	<div id="resetar">
+					
+				<fieldset style="width:center; height:center; border:5px solid #d5d5d5; left:300px; top:100px;" >
+				<legend align="middle"> <label>Resetar elementos do jogo</label> </legend>
+				<form enctype="multipart/form-data" action="resetarBD.php">
+					
+				<h1 align="middle">
+				 <input type="submit"  value="Resetar" />
+				<h1>
+						
+				</form>
+				</fieldset>		
+	</div>
+			
+		
+</body>
+</html>

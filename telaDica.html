@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="iso-8859-1" />
+    <title>Tirando de Letra</title>
+    <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+    <style>
+        body{
+            background: slategray;
+        }
+
+    </style>
+
+ </head>
+
+<body>
+
+
+
+    <figure class="imagemFundo">
+
+        <img src ="assets/fundos/img16.jpg">;
+
+        <div align ="center"  >
+            <img src = "assets/Animacao/animacao_dica.gif" >
+        </div>;
+
+    </figure>
+
+
+    <figure>
+
+        <img src = "assets/Botoes/voltar.png"
+             id="voltar" onclick="window.open('menu.html', '_parent')"
+             onmousemove="mudarImagem()" onmouseout="voltaImagem()"/>;
+    </figure>
+
+<script type="text/javascript">
+
+    function mudarImagem(){
+        document.getElementById("voltar").src = "assets/Botoes/voltar2.png";
+    }
+    function voltaImagem(){
+        document.getElementById("voltar").src = "assets/Botoes/voltar.png";
+    }
+
+</script>
+
+</body>
+</html>

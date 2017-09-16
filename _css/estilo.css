@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+	text-align:center;	
+	background: slategray;
+}
+
+
+/*formatação da imagem*/
+
+
+
+#conteudo {
+	padding:10px;
+	box-shadow:0 0 10px #000;
+	-moz-box-shadow:0 0 10px #000;
+	-webkit-box-shadow:0 0 10px #000;
+	width:500px;
+	border-radius:7px;
+	-moz-border-radius:7px;
+	-webkit-border-radius:7px;
+	margin: auto;
+	background:#FFF;
+}
+
+figure img{
+    position: absolute;
+    top: 555px;
+    left: 1030px;
+    cursor: pointer;
+}
+
+
+figure.imagemFundo img{
+    position: absolute;
+    margin-top: -545px;
+    left: 170px;
+    width: 1000px;
+    height: 650px;
+}
+
+figure.imagemFundo div#img{
+    position: absolute;
+    margin-top: -50px;
+    left: 60px;
+}
+
+
+form{	
+	width: 300px;
+	margin: auto;
+		margin-top: 5px;
+
+}
+
+legend{
+	color: #000000;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+
+#resetar{
+	width: 351px;  
+	height:160px;
+	color:#ffffff;
+	
+	padding:10px 10px 10px 10px;
+	margin:10px;
+	box-shadow:0 0 10px #000;
+	-moz-box-shadow:0 0 10px #000;
+	-webkit-box-shadow:0 0 10px #000;
+	width:500px;
+	border-radius:0px;
+	-moz-border-radius:7px;
+	-webkit-border-radius:7px;
+	margin: 20px auto;
+	background:#FFF;
+}
+
+	
+	
+	
+.inserir{
+	background:#33CCFF;
+	width:430px;
+	border-radius:0px;
+	-moz-border-radius:7px;
+	-webkit-border-radius:7px;
+	
+}
+
